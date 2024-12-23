@@ -58,6 +58,7 @@ button:hover {
   font-size: 1.2em;
   margin: 20px 0;
   line-height: 1.5; /* Melhor espaçamento entre as linhas */
+  white-space: pre-line; /* Garante que as quebras de linha no HTML apareçam */
 }
 
 /* Estilo do botão "Próximo" */
