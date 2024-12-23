@@ -3,39 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Merry Christimas</title>
+  <title>Merry Christmas</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- Mensagem do Chocotone -->
-  <div id="chocotone-message">
-    <img src="chocotone.gif" alt="Chocotone mordido" />
+  <!-- Tela Inicial -->
+  <div id="inicio">
+    <p>Clique para a magia começar...</p>
+    <button onclick="iniciarMagia()">Clique aqui</button>
+  </div>
+
+  <!-- Mensagem do Chocotone (Oculta no início) -->
+  <div id="chocotone-message" class="hidden">
+    <img src="imagens/chocotone.gif" alt="Chocotone mordido" />
     <p>Queria morder seu lábio inferior pra sentir o doce do seu beijo de novo, mas no momento só posso morder esse chocotone 😋🍫</p>
   </div>
 
-  <!-- Mensagem sobre a Magia do Natal -->
-  <div id="magia-natal">
-    <img src="cartão.jpg" alt="Cartão" />
-    <p>Que o Natal transforme seus sonhos em realidade e de toda sua família, que seja um dia especial, calmo e maravilhoso para todos vocês.
-    Feliz Natal, minha estrela! Que você continue iluminando tudo ao seu redor.</p>
+  <!-- Cartão de Natal (Oculto até clicar no chocotone) -->
+  <div id="cartao-natal" class="hidden">
+    <img src="imagens/cartão.jpg" alt="Cartão" onclick="mostrarMagiaNatal()" />
   </div>
 
-  <!-- Cantada boba -->
-  <img src="cartão.jpg" alt="Cartão" />
-   <p>Se ninguém te disse hoje: você é linda igual à magia do Natal, brilha por dentro e por fora, iluminando todos os lugares onde vai 🌟✨</p>
+  <!-- Mensagem da Magia do Natal (Oculta até clicar no cartão) -->
+  <div id="magia-natal" class="hidden">
+    <p>Que o Natal transforme seus sonhos em realidade e de toda sua família, que seja um dia especial, calmo e maravilhoso para todos vocês. Feliz Natal, minha estrela! Que você continue iluminando tudo ao seu redor.</p>
   </div>
 
-  <!-- Mensagem Final -->
-  <div id="final">
-    <img src="cartão.jpg" alt="Cartão" />
-    <p>Eu sou a programadora, mas você... você é o meu código perfeito! 💻💘
-    Feliz natal, musa da perfeição 💕
-    (✿◕‿◕✿) </p>
+  <!-- Cantada Boba (Oculta até clicar na magia do natal) -->
+  <div id="cantada-boba" class="hidden">
+    <p>Se ninguém te disse hoje: você é linda igual à magia do Natal, brilha por dentro e por fora, iluminando todos os lugares onde vai 🌟✨</p>
   </div>
 
-  <!-- Botão para interação -->
-  <button onclick="mostrarMensagem()">Clique para ver o que eu penso de você</button>
+  <!-- Mensagem Final (Oculta até clicar na cantada boba) -->
+  <div id="final" class="hidden">
+    <p>Eu sou a programadora, mas você... você é o meu código perfeito! 💻💘 
+      Feliz Natal, musa da perfeição 💕 
+      (✿◕‿◕✿)</p>
+  </div>
 
   <script src="script.js"></script>
 </body>
