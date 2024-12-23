@@ -25,13 +25,13 @@ img {
 }
 
 .imagem-cartao {
-  max-width: 25%; /* Ajustando a imagem do cartão para 25% */
+  max-width: 25%; /* Ajustando a imagem do cartão para 35% */
   height: auto;
   margin: 20px 0;
 }
 
 .imagem-chocotone {
-  max-width: 24%; /* Ajustando a imagem do chocotone para 24% */
+  max-width: 24%; /* Ajustando a imagem do chocotone para 34% */
   height: auto;
   margin: 20px 0;
 }
