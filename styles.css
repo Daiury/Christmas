@@ -1,0 +1,91 @@
+/* Resetando estilos padrões */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fundo de Natal (imagem dentro da pasta "imagens") */
+body {
+  background: url('natal.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+/* Animação de Chocotone mordido */
+#chocotone-message img {
+  animation: mordida 3s ease-out;
+  max-width: 100%;  /* A imagem vai se adaptar ao tamanho da tela */
+  width: 200px;     /* Tamanho base para desktop */
+}
+
+@keyframes mordida {
+  0% { transform: scale(1); }
+  50% { transform: scale(0.9); }
+  100% { transform: scale(1); }
+}
+
+/* Cantada sobre a magia do Natal com efeito de digitação */
+#magia-natal p {
+  font-size: 1.5em;
+  color: #ff3366;
+  font-family: 'Arial', sans-serif;
+  animation: typing 5s steps(30) 1s 1 normal both;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+/* Final com efeito de fade-in */
+#final p {
+  opacity: 0;
+  animation: aparecer 2s forwards;
+  margin-top: 20px;
+}
+
+@keyframes aparecer {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* Estilo para os botões */
+button {
+  background-color: #ff3366;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #e62e5b;
+}
+
+/* Responsividade: Ajustes para telas menores (mobile) */
+@media (max-width: 768px) {
+  #chocotone-message img {
+    width: 150px; /* Reduzir o tamanho da imagem no mobile */
+  }
+
+  #magia-natal p,
+  #final p {
+    font-size: 1.2em;  /* Ajusta o tamanho da fonte */
+  }
+
+  button {
+    font-size: 1.1em;
+    padding: 8px 15px;
+  }
+}
