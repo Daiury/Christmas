@@ -5,14 +5,15 @@
   box-sizing: border-box;
 }
 
-/* Fundo de Natal (imagem dentro da pasta "imagens") */
+/* Fundo de Natal (imagem do GitHub) */
 body {
-  background: url('natal.jpg') no-repeat center center fixed;
+  background: url('https://github.com/Daiury/Christmas/raw/main/natal.jpg') no-repeat center center fixed;
   background-size: cover;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Arial', 'Helvetica', sans-serif;
   text-align: center;
   color: white;
   padding: 20px;
+  line-height: 1.5; /* Melhora a leitura, especialmente no mobile */
 }
 
 /* Animação de Chocotone mordido */
@@ -32,16 +33,22 @@ body {
 #magia-natal p {
   font-size: 1.5em;
   color: #ff3366;
-  font-family: 'Arial', sans-serif;
-  animation: typing 5s steps(30) 1s 1 normal both;
+  font-family: 'Arial', 'Helvetica', sans-serif;
+  animation: typing 5s steps(30) 1s 1 normal both, blink 0.7s step-end infinite;
   white-space: nowrap;
   overflow: hidden;
-  margin-top: 20px;
+  border-right: 2px solid #ff3366;
+  display: inline-block;
+  width: 0; /* Necessário para o efeito de digitação */
 }
 
 @keyframes typing {
   from { width: 0; }
   to { width: 100%; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
 }
 
 /* Final com efeito de fade-in */
@@ -66,11 +73,15 @@ button {
   border-radius: 5px;
   cursor: pointer;
   margin-top: 20px;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, transform 0.2s;
 }
 
 button:hover {
   background-color: #e62e5b;
+}
+
+button:active {
+  transform: scale(0.95);
 }
 
 /* Responsividade: Ajustes para telas menores (mobile) */
