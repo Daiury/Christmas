@@ -24,6 +24,16 @@ img {
   height: auto;
 }
 
+.imagem-cartao {
+  max-width: 70%; /* Reduz o tamanho do cartão */
+  margin: 20px 0;
+}
+
+.imagem-chocotone {
+  max-width: 50%; /* Reduz o tamanho do chocotone */
+  margin: 20px 0;
+}
+
 button {
   background-color: #ff3366;
   color: white;
@@ -39,14 +49,15 @@ button:hover {
   background-color: #e62e5b;
 }
 
-/* Caixa de texto com fundo escuro sem ser tão opaco para as frases */
+/* Caixa de texto com fundo transparente preto para as frases */
 .frase p {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.6); /* Fundo preto com 60% de transparência */
   color: white;
   padding: 15px;
   border-radius: 5px;
   font-size: 1.2em;
   margin: 20px 0;
+  line-height: 1.5; /* Melhor espaçamento entre as linhas */
 }
 
 /* Estilo do botão "Próximo" */
