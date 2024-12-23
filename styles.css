@@ -25,12 +25,12 @@ img {
 }
 
 .imagem-cartao {
-  max-width: 70%; /* Reduz o tamanho do cartão */
+  max-width: 50%; /* Reduz o tamanho da imagem do cartão para 50% */
   margin: 20px 0;
 }
 
 .imagem-chocotone {
-  max-width: 50%; /* Reduz o tamanho do chocotone */
+  max-width: 40%; /* Reduz o tamanho do chocotone para 40% */
   margin: 20px 0;
 }
 
