@@ -10,33 +10,33 @@
 
   <!-- Tela Inicial -->
   <div id="inicio">
-    <p>Clique para a magia começar...</p>
+    <p>Clique aqui para a magia começar...</p>
     <button onclick="iniciarMagia()">Clique aqui</button>
   </div>
 
-  <!-- Mensagem do Chocotone (Oculta no início) -->
+  <!-- Chocotone e frase (Ocultos no início) -->
   <div id="chocotone-message" class="hidden">
-    <img src="https://raw.githubusercontent.com/Daiury/Christmas/main/chocotone.gif" alt="Chocotone mordido" />
+    <img src="https://raw.githubusercontent.com/Daiury/Christmas/main/chocotone.gif" alt="Chocotone mordido" onclick="mostrarCartao()" />
     <p>Queria morder seu lábio inferior pra sentir o doce do seu beijo de novo, mas no momento só posso morder esse chocotone 😋🍫</p>
   </div>
 
-  <!-- Cartão de Natal (Oculto até clicar no chocotone) -->
+  <!-- Cartão de Natal com magia do Natal (Ocultos no início) -->
   <div id="cartao-natal" class="hidden">
     <img src="https://raw.githubusercontent.com/Daiury/Christmas/main/cartão.jpg" alt="Cartão de Natal" onclick="mostrarMagiaNatal()" />
+    <p id="magia-natal" class="hidden">
+      Que o Natal transforme seus sonhos em realidade e de toda sua família. Que seja um dia especial, calmo e maravilhoso para todos vocês. Feliz Natal, minha estrela! Que você continue iluminando tudo ao seu redor.
+    </p>
   </div>
 
-  <!-- Mensagem da Magia do Natal (Oculta até clicar no cartão) -->
-  <div id="magia-natal" class="hidden">
-    <p>Que o Natal transforme seus sonhos em realidade e de toda sua família, que seja um dia especial, calmo e maravilhoso para todos vocês. Feliz Natal, minha estrela! Que você continue iluminando tudo ao seu redor.</p>
-  </div>
-
-  <!-- Cantada Boba (Oculta até clicar na magia do natal) -->
+  <!-- Cartão com cantada boba (Oculto no início) -->
   <div id="cantada-boba" class="hidden">
+    <img src="https://raw.githubusercontent.com/Daiury/Christmas/main/cartão.jpg" alt="Cartão de Natal" onclick="mostrarMensagemFinal()" />
     <p>Se ninguém te disse hoje: você é linda igual à magia do Natal, brilha por dentro e por fora, iluminando todos os lugares onde vai 🌟✨</p>
   </div>
 
-  <!-- Mensagem Final (Oculta até clicar na cantada boba) -->
+  <!-- Cartão com mensagem final (Oculto no início) -->
   <div id="final" class="hidden">
+    <img src="https://raw.githubusercontent.com/Daiury/Christmas/main/cartão.jpg" alt="Cartão de Natal" />
     <p>Eu sou a programadora, mas você... você é o meu código perfeito! 💻💘 Feliz Natal, musa da perfeição 💕 (✿◕‿◕✿)</p>
   </div>
 
